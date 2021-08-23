@@ -13,8 +13,8 @@ async function getData() {
 function test(data) {
   return new Promise((resolve) => {
     setTimeout(() => {
-      const data = test.map(buildFullName);
-      resolve(data);
+      const fullName = data.map(buildFullName);
+      resolve(fullName);
     }, 3000)
   })
 }
